@@ -1,0 +1,30 @@
+<html>
+<head>
+   <script type="text/javascript">
+      function mebel(firma,cena,dostawa)
+      {
+      this.firma=firma;
+      this.cena=cena;
+      this.dostawa=dostawa;
+      }
+
+      pudelko.prototype.wypisz = function ()
+      {
+      alert(this.firma + ' ' + this.cena+ ' ' + this.dostawa);
+      };
+
+      var mebel1 = new mebel("AGATA", "300zl", "15zl"); 
+      var mebel2 = new mebel('JYSK', '260zl', '20zl');
+      mebel1.wypisz(); 
+      mebel2.wypisz();
+      document.write("dostęp do właściwości"+"<br>");
+   
+      document.write("mebel pierwszy"+" &nbsp;Firma: "+mebel1.firma+" &nbsp;cena: "+mebel1.cena+" &nbsp;dostawa: "+mebel1.dostawa+"<br>");
+      document.write("mebel drugi"+" &nbsp;Firma: "+mebel2.firma+" &nbsp;cena: "+mebel2.cena+" &nbsp;dostawa: "+mebel2.dostawa+);
+   </script>
+</head>
+<body>
+   <br>
+   programowanie obiektowe
+</body>
+</html>
